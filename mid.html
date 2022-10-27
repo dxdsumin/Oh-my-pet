@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Oh my pet </title>
+    <link href="change.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="content">
+        <h2> 운이 </h2>
+        <div id="bigImages">
+            <img id="big" src="un1.jpg">
+        </div>
+        <div id="'smallImages">
+            <img class="small" src="un1.jpg">
+            <img class="small" src="un2.jpg">
+            <img class="small" src="un3.jpg">
+            <img class="small" src="un4.jpg">
+            <img class="small" src="un5.jpg">
+        </div>
+    </div>
+
+    <script>
+    var bigPic = document.querySelector("#big");
+var smallPics = document.querySelectorAll(".small");
+
+for(var i = 0 ; i < smallPics.length ; i++){
+    smallPics[i].onclick = changepic;
+}
+
+function changepic(){
+    var smallPicAttribute = this.getAttribute("src");
+    bigPic.setAttribute("src", smallPicAttribute);
+}
+</script>
+
+    
+</body>    
+</html>
