@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Oh my pet_운이 모음집 </title>
+    <link href="intro.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <img id="target" src="topL.png">
+    <nav>
+        <ul class="top-nav">
+            <li class="button"><a href="#" onclick="location.href='main2.html'">Home</a></li>
+            <li class="button"><a href="#" onclick="location.href='Overview.html'">Overview</a></li>
+            <li class="button lastBtn"><a href="#" onclick="location.href='Contact.html'">Contact</a></li>
+        </ul>
+        <ul class="R-nav">
+            <li class="RButton"><a href="#" onclick="location.href='unintro.html'">운이 소개</a></li>
+            <li class="RButton"><a href="#" onclick="location.href='un.html'">운이 모음집</a></li>
+        </ul>
+      </nav>
+
+      <body>
+        <div id="content">
+            <div id="bigImages">
+                <img id="big" src="un1.jpg">
+            </div>
+            <div id="smallImages">
+                <img class="small" src="un1.jpg">
+                <img class="small" src="un2.jpg">
+                <img class="small" src="un3.jpg">
+                <img class="small" src="un4.jpg">
+                <img class="small" src="un5.jpg">
+                <img class="small" src="un9.jpg">
+                <img class="small" src="un19.jpg">
+            </div>
+        </div>
+    
+        <script>
+        var bigPic = document.querySelector("#big");
+    var smallPics = document.querySelectorAll(".small");
+    
+    for(var i = 0 ; i < smallPics.length ; i++){
+        smallPics[i].onclick = changepic;
+    }
+    
+    function changepic(){
+        var smallPicAttribute = this.getAttribute("src");
+        bigPic.setAttribute("src", smallPicAttribute);
+    }
+    </script>
+
+    </body>
+    </html>

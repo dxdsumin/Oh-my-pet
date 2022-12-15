@@ -1,0 +1,174 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+*{
+    margin: auto 0;
+    padding: 0;
+    /*overflow:hidden;*/
+    /* font-family: 'Jua', sans-serif; */
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    display: block;
+}
+li{
+    list-style: none;
+}
+
+body {
+    height: 1700px;
+    background-image:url("main02.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-nav{
+    position: fixed;
+    height: 20px;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    background-color: white;
+    margin-top: 40px;
+    justify-content: flex-end;
+    z-index: 2;
+}
+
+li{
+    padding: 0.5rem;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.button{
+    height: 35px;
+    background-color: white;
+    margin-right: 20px;
+    margin-top: -15px;
+    line-height: 35px;
+    border-radius: 15px;
+    font-size: 26px;
+    padding: 10px 35px;
+    z-index: 2;
+}
+.lastBtn {
+    margin-right: 55px;
+}
+
+#slideshow-frame {
+    position: relative;
+    width: 960px;
+    height: 540px;
+    top: 100px;
+    left: 100px;
+    overflow: hidden;
+}
+
+#target{
+    position: fixed;
+    top: -15px;
+    left: -550px;
+    z-index: 3;
+}
+
+.logo{
+    top: 180px;
+    left: 80px;
+    position: relative;
+    z-index: 1;
+}
+
+.pbox{
+    display: flex;
+    width: 1000px;
+    height: 600px;
+    margin: auto;
+    position:relative;
+    top: 700px;
+    justify-content: space-evenly;
+    line-height: 275px;
+    text-align: center;
+}
+
+.abox{
+    width: 200px;
+    height: 300px;
+    border-radius: 30px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+.abox>a{
+    color: white;
+}
+
+.imgbox0{
+    position: relative;
+}
+
+.imgbox1, .imgbox2, .imgbox3{
+    position: absolute;
+    display: none;
+    bottom: -25px;
+    left: -25px;
+}
+
+.dog{
+    background-color: rgb(133, 67, 22);
+}
+.dog:hover~img{
+    display: block;
+
+}
+.dog:hover~a>img{
+    display: block;
+}
+
+.cat1{
+    background-color: black;
+}
+.cat1:hover~img{
+    display: block;
+}
+.cat1:hover~a>img{
+    display: block;
+}
+
+.cat2{
+    background-color: rgb(143, 143, 143);
+}
+.cat2:hover~img{
+    display: block;
+}
+.cat2:hover~a>img{
+    display: block;
+}
+
+.imgbutton1, .imgbutton2, .imgbutton3{
+    position: absolute;
+    display: none;
+}
+.imgbutton1{
+    top: -80px;
+    left: 10px;
+}
+.imgbutton2{
+    top: 200px;
+    left: 10px;
+}
+.imgbutton3{
+    top: 255px;
+    left: 10px;
+}
+
+.ovM{
+    display: block;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
